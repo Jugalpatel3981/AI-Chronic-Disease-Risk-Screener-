@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-inter-tight), var(--font-inter), system-ui, sans-serif;
+
+  --color-ground: #f6f8f7;
+  --color-surface: #ffffff;
+  --color-ink: #0e1a17;
+  --color-ink-2: #3d4d48;
+  --color-muted: #4f5f5a;
+  --color-line: #e3e8e6;
+  --color-line-soft: #eef2f0;
+  --color-line-strong: #c9d3d0;
+
+  --color-brand: #0b6b61;
+  --color-brand-dark: #084f48;
+  --color-brand-soft: #e2f1ee;
+  --color-brand-ink: #0b4a43;
+
+  --color-low: #1d6b34;
+  --color-low-soft: #e3f3e7;
+  --color-moderate: #7a4a00;
+  --color-moderate-soft: #fdf0d8;
+  --color-high: #a8231b;
+  --color-high-soft: #fbe6e4;
+}
+
+body {
+  background: var(--color-ground);
+  color: var(--color-ink);
+}
+
+/* Visible keyboard focus everywhere. */
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* Print / "Save as PDF": keep the results, hide the controls. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff;
+  }
+}

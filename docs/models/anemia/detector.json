@@ -1,0 +1,9 @@
+{
+  "nail_recall_iou50": 0.9973333333333333,
+  "photos_without_detection": 0,
+  "auroc_hb_lt_120_handdrawn_boxes": 0.8396188646008487,
+  "auroc_hb_lt_120_detected_boxes": 0.8463447834094002,
+  "auroc_hb_lt_120_handdrawn_same_photos": 0.8396188646008487,
+  "mae_gl_detected_boxes": 14.932759929763831,
+  "n_photos": 250
+}

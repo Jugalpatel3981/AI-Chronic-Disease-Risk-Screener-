@@ -1,0 +1,110 @@
+{
+  "backbone": "efficientnet_b0.ra_in1k",
+  "epochs": 15,
+  "input_size": 384,
+  "cutpoints": [
+    0.6100795554657449,
+    1.3751656064692723,
+    1.9535346324773855,
+    3.4915431238814576
+  ],
+  "referable_threshold": 0.3306759894828173,
+  "calibration": {
+    "referable": [
+      2.652808789523505,
+      -3.7525779954759373
+    ],
+    "any_dr": [
+      2.2600628618918095,
+      -2.287980284879192
+    ]
+  },
+  "cross_validation": {
+    "n_images": 1600,
+    "qwk": 0.784791376322123,
+    "accuracy": 0.553125,
+    "auroc_referable": 0.9359746031746031,
+    "auroc_any_dr": 0.9031281812950914,
+    "referable_sensitivity": 0.9,
+    "referable_specificity": 0.8233333333333334
+  },
+  "test": {
+    "n_images": 400,
+    "qwk": 0.8523859539557725,
+    "accuracy": 0.635,
+    "auroc_referable": 0.9716566763125257,
+    "auroc_any_dr": 0.960875,
+    "referable_sensitivity": 0.9207317073170732,
+    "referable_specificity": 0.8898305084745762
+  },
+  "test_ci95": {
+    "qwk": [
+      0.7964002471313518,
+      0.8949627257194859
+    ],
+    "accuracy": [
+      0.5625,
+      0.7075
+    ],
+    "auroc_referable": [
+      0.947327816242727,
+      0.9882559031324719
+    ],
+    "auroc_any_dr": [
+      0.9293099557198875,
+      0.9833274896782467
+    ],
+    "referable_sensitivity": [
+      0.8648578265765766,
+      0.9675377042312526
+    ],
+    "referable_specificity": [
+      0.8217733380480905,
+      0.9430991516436904
+    ]
+  },
+  "test_confusion": [
+    [
+      146,
+      46,
+      6,
+      2,
+      0
+    ],
+    [
+      7,
+      20,
+      7,
+      2,
+      0
+    ],
+    [
+      2,
+      14,
+      27,
+      29,
+      0
+    ],
+    [
+      0,
+      0,
+      9,
+      56,
+      7
+    ],
+    [
+      0,
+      2,
+      0,
+      13,
+      5
+    ]
+  ],
+  "grade_names": [
+    "No DR",
+    "Mild NPDR",
+    "Moderate NPDR",
+    "Severe NPDR",
+    "Proliferative DR"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "onnx": "retina.onnx",
+  "backbone": "efficientnet_b0.ra_in1k",
+  "ensemble_size": 5,
+  "input_size": 384,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "cutpoints": [
+    0.6100795554657449,
+    1.3751656064692723,
+    1.9535346324773855,
+    3.4915431238814576
+  ],
+  "calibration": {
+    "referable": [
+      2.652808789523505,
+      -3.7525779954759373
+    ],
+    "any_dr": [
+      2.2600628618918095,
+      -2.287980284879192
+    ]
+  },
+  "referable_threshold": 0.3306759894828173,
+  "grade_names": [
+    "No DR",
+    "Mild NPDR",
+    "Moderate NPDR",
+    "Severe NPDR",
+    "Proliferative DR"
+  ]
+}

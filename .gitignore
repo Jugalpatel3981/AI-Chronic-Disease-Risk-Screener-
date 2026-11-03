@@ -1,0 +1,40 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---------- ML artifacts / data (large files are downloaded, not committed) ----------
+mlruns/
+data/raw/
+data/interim/
+data/processed/
+*.ckpt
+
+# ---------- Node / Next.js ----------
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+
+# ---------- Env / secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---------- Retina training checkpoints (large; exported models go to backend/models) ----------
+ml/retina/runs/
